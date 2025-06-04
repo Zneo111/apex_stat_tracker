@@ -1,10 +1,10 @@
-# Virtual env (Pipenv)
-Pipfile.lock
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 
-# dotenv
+# Virtual environment folders
 .env
+.venv/
+env/
+venv/
 
-# OS junk
-.DS_Store
