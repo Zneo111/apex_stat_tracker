@@ -6,7 +6,7 @@ from stat_tracker.rank import Rank
 def seed():
     session = Session()
 
-    # Check if player exists before adding
+
     if not session.query(Player).filter_by(email="wraith@example.com").first():
         player1 = Player(username="WraithMain", email="wraith@example.com")
         session.add(player1)
@@ -17,7 +17,6 @@ def seed():
 
     session.commit()
 
-    # Similarly check before adding matches and ranks if needed
-
+   
     session.close()
     print("🌱 Database seeded successfully.")
